@@ -15,8 +15,8 @@ public:
     //析构函数
     ~TA() = default;
     //有参构造函数
-    TA(int num, const string &n, char g, const string &birth, const string &idcard, const string &principalship,
-       const string &department, int cNo,  const string &sub, Teacher &adv);
+    TA(int num, const string& name, char gender, const string& birth, const string &idcard, const string &principalship,
+       const string &department, int class_no,  const string &subject, Teacher &adviser);
     //复制构造函数
     TA(TA &ta);
     //打印信息

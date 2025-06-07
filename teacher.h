@@ -5,6 +5,8 @@
 #ifndef INC_1_5_TEACHER_H
 #define INC_1_5_TEACHER_H
 #include "People.h"
+#include <string>
+using namespace std;
 class Teacher :virtual public People{
 public:
     //无参构造
@@ -12,7 +14,7 @@ public:
     //析构函数
     ~Teacher() = default;
     //有参构造
-    Teacher(int num, const string &n, char g, const string &birth, const string &id, const string &principalship,
+    Teacher(int num, const string& name, char gender, const string& birth, const string& id, const string &principalship,
             const string &department);
     //复制构造
     Teacher(Teacher &teacher);
@@ -28,6 +30,6 @@ public:
     void Show();
 
 protected:
-    string Principalship,Department;
+    string principalship,department;
 };
 #endif //INC_1_5_TEACHER_H
