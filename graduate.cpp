@@ -33,9 +33,3 @@ void Graduate::setAdviser(Teacher adviser){
 const string &Graduate::getAdviserName() const {
     return adviser.getName();
 }
-
-
-
-
-
-

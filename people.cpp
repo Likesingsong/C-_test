@@ -3,6 +3,7 @@
 //
 
 #include "People.h"
+
 //有参构造函数定义
 People::People(int num, const std::string& name, char gender, const std::string& birth, const std::string& id) :
 	_number(num), _name(name), _gender(gender), _birth(birth), _id(id) {
@@ -15,7 +16,6 @@ People::People(const People& people) {
 	_birth = people._birth;
 	_id = people._id;
 }
-
 
 //成员函数Show定义
 void People::Show() {

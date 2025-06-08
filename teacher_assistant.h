@@ -10,16 +10,16 @@
 
 class TA : public Teacher, public Graduate {
 public:
-    //ÎŞ²Î¹¹Ôìº¯Êı
+    //æ— å‚æ„é€ å‡½æ•°
     TA() = default;
-    //Îö¹¹º¯Êı
+    //ææ„å‡½æ•°
     ~TA() = default;
-    //ÓĞ²Î¹¹Ôìº¯Êı
+    //æœ‰å‚æ„é€ å‡½æ•°
     TA(int num, const string& name, char gender, const string& birth, const string &idcard, const string &principalship,
        const string &department, int class_no,  const string &subject, Teacher &adviser);
-    //¸´ÖÆ¹¹Ôìº¯Êı
+    //å¤åˆ¶æ„é€ å‡½æ•°
     TA(TA &ta);
-    //´òÓ¡ĞÅÏ¢
+    //æ‰“å°ä¿¡æ¯
     void Show();
 };
 

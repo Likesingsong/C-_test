@@ -2,24 +2,24 @@
 // Created by dell on 2022-5-12.
 //
 
-#include "TA.h"
-//ÓĞ²Î¹¹Ôìº¯Êı¶¨Òå
-TA::TA(int num, const string& name, char gender, const string& birth, const string& idcard, const string& principalship,
-	const string& department, int class_no, const string& subject, Teacher& adviser) :
+#include "teacher_assistant.h"
+//æœ‰å‚æ„é€ å‡½æ•°å®šä¹‰
+TA::TA(int num, const string& name, char gender,
+	const string& birth, const string& idcard,
+	const string& principalship, const string& department,
+	int class_no, const string& subject, Teacher& adviser) :
 	People(num, name, gender, birth, idcard),
 	Teacher(num, name, gender, birth, idcard, principalship, department),
 	Student(num, name, gender, birth, idcard, class_no),
 	Graduate(num, name, gender, birth, idcard, class_no, subject, adviser) {
 }
-//¸´ÖÆ¹¹Ôìº¯Êı¶¨Òå
+//å¤åˆ¶æ„é€ å‡½æ•°å®šä¹‰
 TA::TA(TA& ta) :Graduate(ta) {
 	principalship = ta.principalship;
 	department = ta.department;
 }
-//³ÉÔ±º¯ÊıShow¶¨Òå
+//æˆå‘˜å‡½æ•°Showå®šä¹‰
 void TA::Show() {
 	Teacher::Show();
-	cout << ",°àºÅÊÇ:" << class_no << ",×¨ÒµÊÇ:" << subject << ",µ¼Ê¦ÊÇ:" << adviser.getName();
+	cout << ",ç­å·æ˜¯:" << class_no << ",ä¸“ä¸šæ˜¯:" << subject << ",å¯¼å¸ˆæ˜¯:" << adviser.getName();
 }
-
-

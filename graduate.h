@@ -35,5 +35,4 @@ protected:
 	Teacher adviser;
 };
 
-
 #endif //INC_1_5_GRADUATE_H

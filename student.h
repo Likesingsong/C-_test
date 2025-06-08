@@ -27,5 +27,4 @@ protected:
 	int class_no;
 };
 
-
 #endif //INC_1_5_STUDENT_H

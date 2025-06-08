@@ -3,7 +3,7 @@
 #include "Student.h"
 #include "Teacher.h"
 #include "Graduate.h"
-#include "TA.h"
+#include "teacher_assistant.h"
 
 using namespace std;
 
@@ -34,9 +34,9 @@ int main() {
      * 测试中初始化People类的信息只存在于Teacher类那一分支
      * 因此Graduate类定义的blue对象中编号、姓名、性别、出生日期、身份证号为空值
      */
-//    cout << "研究生的信息是:" << endl;
-//    blue.Show();
-//    cout << endl;
+    // cout << "研究生的信息是:" << endl;
+    // blue.Show();
+    // cout << endl;
     cout << "助教的信息是:" << endl;
     ruby.Show();
     cout << endl;

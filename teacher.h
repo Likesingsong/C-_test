@@ -32,4 +32,5 @@ public:
 protected:
     string principalship,department;
 };
+
 #endif //INC_1_5_TEACHER_H

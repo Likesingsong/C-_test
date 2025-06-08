@@ -34,6 +34,3 @@ const string& Teacher::getDepartment() const {
 void Teacher::setDepartment(const string& department) {
 	Teacher::department = department;
 }
-
-
-

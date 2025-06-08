@@ -3,8 +3,8 @@
 //
 
 #include "Student.h"
+
 //有参构造函数定义
-// 修复构造函数定义，确保参数类型与声明一致
 Student::Student(int num, const string& name, char gender, const string& birth, const string& id, int class_no) :
     People(num, name, gender, birth, id), class_no(class_no) {
 }
